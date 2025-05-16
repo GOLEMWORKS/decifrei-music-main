@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.home {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #12294B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .centro {
+    display: flex;
+    flex-direction: row;
+}
+
+.home .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.home .beneficios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.home .beneficios div h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 1px #000;
+}
+
+.home .beneficios div p {
+    font-size: 16px;
+}
+
+.home .botao {
+    margin-top: 15px;
+}
+
+.home .botao button {
+    background-color: #12294B;
+    color: #D2D7DE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px 1px #000;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 100ms ease-in-out;
+}
+
+.home .botao button:hover {
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 700px) {
+    .home {
+        height: 100vh;
+    }
+
+    .home .titulo {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .titulo #logo-Главная {
+        display: block;
+        width: 360px;
+    }
+    
+    .home .centro .beneficios {
+       display: none;
+    }
+
+    .home .botao {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+}
